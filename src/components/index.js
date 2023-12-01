@@ -5,3 +5,5 @@ export { default as Extra } from "./Extra";
 export { default as About1 } from "./AboutSec";
 export { default as Testimonials } from "./Testimonials";
 export { default as Offers } from "./Offers";
+export { default as Eco } from "./Eco";
+export { default as Gallary } from "./Gallary";

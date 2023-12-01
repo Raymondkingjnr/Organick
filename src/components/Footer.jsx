@@ -23,7 +23,7 @@ const Footer = () => {
   return (
     <section className="align-element my-20">
       <div className="grid gap-x-5 gap-y-5 lg:grid-cols-3 md:grid-cols-2 place-items-center items-center ">
-        <div className="grid lg:text-right sm:text-center p-2">
+        <div className="grid lg:text-right text-center p-2">
           <h4 className="capitalize font-semibold text-lg pb-4"> contact us</h4>
           <h4 className="text-sm font-semibold">Email</h4>
           <p className="mt-2 font-semibold text-sm text-[gray]">
@@ -58,7 +58,7 @@ const Footer = () => {
             })}
           </div>
         </div>
-        <div className="p-2">
+        <div className="p-2 text-center lg:text-left">
           <h4 className="capitalize font-semibold text-lg mb-10">
             {" "}
             utility page

@@ -14,7 +14,9 @@ const Hero = () => {
         <h3 className="lg:text-3xl font-bold pt-5 w-60 leading-10 tracking-wide sm:text-sm sm:leading-4">
           Choose the best healthier food of life{" "}
         </h3>
-        <button className="btn btn-warning capitalize mt-5">Explore Now</button>
+        <button className="btn bg-[#EFD372] border-transparent capitalize mt-5">
+          Explore Now
+        </button>
       </div>
     </div>
   );

@@ -1,5 +1,13 @@
 import React from "react";
-import { About1, Extra, Hero, Offers, Testimonials } from "../components";
+import {
+  About1,
+  Eco,
+  Extra,
+  Gallary,
+  Hero,
+  Offers,
+  Testimonials,
+} from "../components";
 
 const Landing = () => {
   return (
@@ -9,6 +17,9 @@ const Landing = () => {
       <About1 />
       <Testimonials />
       <Offers />
+      <Eco />
+      <Gallary />
+      <Landing />
     </div>
   );
 };

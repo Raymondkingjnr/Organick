@@ -27,6 +27,10 @@ import video_img from "../assets/video-bg.png";
 import photo1 from "../assets/photo.jpg";
 import photo2 from "../assets/photo2.jpg";
 import photo3 from "../assets/photo3.jpg";
+import offer1 from "../assets/offer1.png";
+import offer2 from "../assets/offer2.png";
+import offer3 from "../assets/offer3.png";
+import offer4 from "../assets/offer4.png";
 
 export default {
   bg1,
@@ -58,4 +62,8 @@ export default {
   photo1,
   photo2,
   photo3,
+  offer1,
+  offer2,
+  offer3,
+  offer4,
 };
