@@ -1,23 +1,25 @@
 import React from "react";
 import image from "../constant/image";
+import SectionTitle from "./SectionTitle";
 
 const Hero = () => {
   return (
     <div
-      className="h-[100vh] bg-cover object-cover  bg-no-repeat bg-center"
+      className="h-[700px] bg-cover object-contain  bg-no-repeat bg-center "
       style={{ backgroundImage: `url(${image.hero_bg})` }}
     >
-      <div className="pt-72 text-left align-element">
-        <i className="text-sm font-medium mb-1 text-[#7eb693] ">
-          100% natural food
-        </i>
-        <h3 className="lg:text-3xl font-bold pt-5 w-60 leading-10 tracking-wide sm:text-sm sm:leading-4">
-          Choose the best healthier food of life{" "}
-        </h3>
-        <button className="btn bg-[#EFD372] border-transparent capitalize mt-5">
-          Explore Now
-        </button>
-      </div>
+      <section className="grid items-center align-element ">
+        <div className="text-left mt-[15rem] w-[200px]">
+          <SectionTitle
+            header={" 100% natural food"}
+            title={" Choose the best healthier food of life"}
+          />
+
+          <button className="btn bg-[#EFD372] border-transparent capitalize">
+            Explore Now
+          </button>
+        </div>
+      </section>
     </div>
   );
 };

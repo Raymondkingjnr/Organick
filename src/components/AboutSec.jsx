@@ -1,26 +1,25 @@
 import React from "react";
 import image from "../constant/image";
+import SectionTitle from "./SectionTitle";
 
 const AboutSec = () => {
   return (
-    <section
-      className="mb-20 max-w-6xl mx-auto bg-cover h-[70vh] bg-center"
-      style={{ backgroundImage: `url(${image.about1})` }}
-    >
+    <section className="align-element grid  md:grid-cols-2 items-center place-content-center place-items-center">
+      <div>
+        <img src={image.about1} alt="" />
+      </div>
       <div>
         <div className="card-body lg:w-[500px] lg:mt-10 md:w-[450px] md:mt-32  sm:w-0 float-right">
-          <i className="card-title capitalize text-[#7eb693] text-sm font-semibold">
-            About us!!
-          </i>
-          <h4 className="text-2xl font-bold text-[#274c5b]">
-            {" "}
-            we belive in working accredited farms
-          </h4>
-          <p className="text-sm font-bold text-[#000] leading-5 mt-5">
-            Simply dummy text of the printing and typesetting industry. Lorem
-            had ceased to been the industry's standard dummy text ever since the
-            1500s, when an unknown printer took a galley.
-          </p>
+          <div>
+            <SectionTitle
+              header="About us!!"
+              title="  we belive in working accredited farms"
+              text="Simply dummy text of the printing and typesetting industry. Lorem
+              had ceased to been the industrys standard dummy text ever since the
+              1500s, when an unknown printer took a galley."
+            />
+          </div>
+
           <div>
             <div className="gap-2 flex items-center mt-3">
               <div className=" w-[19%]">
@@ -35,7 +34,7 @@ const AboutSec = () => {
                 <div className="text-slate-700 text-sm font-extrabold max-md:max-w-full">
                   Organic Foods Only
                 </div>
-                <div className="text-[#000] text-sm  font-semibold  mt-2">
+                <div className="text-[#000] text-xs  font-semibold  mt-2">
                   Simply dummy text of the printing and typesetting industry.
                   Lorem Ipsum
                 </div>
@@ -55,7 +54,7 @@ const AboutSec = () => {
                 <div className="text-slate-700 text-sm font-extrabold max-md:max-w-full">
                   Organic Foods Only
                 </div>
-                <div className="text-[#000] text-sm  font-semibold mt-2 max-md:max-w-full">
+                <div className="text-[#000] text-xs  font-semibold mt-2 max-md:max-w-full">
                   Simply dummy text of the printing and typesetting industry.
                   Lorem Ipsum
                 </div>

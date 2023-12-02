@@ -1,5 +1,6 @@
 import React from "react";
 import image from "../constant/image";
+import SectionTitle from "./SectionTitle";
 
 const cards = [
   {
@@ -37,7 +38,7 @@ const Offers = () => {
     <section className=" bg-[#274C5B] py-10 ">
       <div className=" max-w-6xl mx-auto p-7">
         {/* TOP */}
-        <main className="flex justify-between items-center w-full gap-7">
+        <main className="top-flex">
           <div className="">
             <i className="font-semibold text-sm text-[#7EB693]">Offers!!</i>
             <h3 className="font-extrabold text-sm text-[#FFFFFF]">
@@ -72,10 +73,9 @@ const Offers = () => {
                   />
                 </figure>
                 <div className="card-body items-start text-left ">
-                  <p className="card-title text-sm font-semibold mt-8  ">
-                    {title}
-                  </p>
-                  <div className="flex align-middle gap-x-3 border-t border-base-300 pt-2">
+                  <p className="card-title text-sm font-semibold">{title}</p>
+                  <div class="divider"></div>
+                  <div className="flex align-middle gap-x-3">
                     <s className="font-semibold text-xs text-[#B8B8B8]">
                       {forma_price}
                     </s>

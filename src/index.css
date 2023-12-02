@@ -7,3 +7,22 @@
     @apply mx-auto max-w-6xl px-8;
   }
 }
+/* body {
+  overflow-x: hidden;
+} */
+
+.top-flex {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  gap: 2.5rem;
+}
+
+@media screen and (min-width: 800px) {
+  .top-flex {
+    flex-direction: row;
+    text-align: left;
+  }
+}

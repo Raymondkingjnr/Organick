@@ -1,5 +1,6 @@
 import React from "react";
 import image from "../constant/image";
+import SectionTitle from "./SectionTitle";
 
 const carouselItems = [
   {
@@ -29,16 +30,18 @@ const Testimonials = () => {
       style={{ backgroundImage: `url(${image.testimonial})` }}
     >
       <main>
-        <div className="text-center mt-5 ">
-          <i className=" text-sm font-semibold text-[#7eb693]">Testimonial</i>
-          <h4 className="text-xl text-neutral font-extrabold mt-5">
-            What our customers are saying
-          </h4>
+        <div className="mt-5 grid place-items-center">
+          <div className="text-center w-56">
+            <SectionTitle
+              header="Testimonial"
+              title=" What our customers are saying"
+            />
+          </div>
         </div>
 
         {/* Carousel sec */}
 
-        <div className=" w-[700px] carousel flex items-center place-items-center rounded-box mt-20">
+        <div className=" w-[700px] carousel flex items-center place-items-center rounded-box mt-10">
           {carouselItems.map((item) => {
             const { id, image, text, name } = item;
 
@@ -58,7 +61,7 @@ const Testimonials = () => {
             );
           })}
         </div>
-        <section className="grid lg:grid-cols-4 md:grid-cols-2 items-center place-items-center gap-x-8 gap-y-9 mt-12 mb-12">
+        <section className="grid grid-cols-2 lg:grid-cols-4 md:grid-cols-2 items-center place-items-center gap-x-8 gap-y-9 mt-12 mb-12 px-[6rem] ">
           <div className="text-center flex items-center place-content-center w-28 h-28 rounded-full border-[5px] border-[#7EB693] border-solid bg-[#f1f1f1]">
             <main>
               <h3 className="text-lg font-bold text-[#274C5B]">100%</h3>

@@ -31,9 +31,21 @@ import offer1 from "../assets/offer1.png";
 import offer2 from "../assets/offer2.png";
 import offer3 from "../assets/offer3.png";
 import offer4 from "../assets/offer4.png";
+import tomatoes from "../assets/tomatoes.png";
+import leafs from "../assets/leafs.png";
+import spicy from "../assets/spicy.png";
+import nuts from "../assets/nuts.jpg";
+import ginger from "../assets/ginger.jpg";
+import apple from "../assets/apple.png";
 
 export default {
+  spicy,
+  nuts,
+  ginger,
+  apple,
   bg1,
+  leafs,
+  tomatoes,
   bg2,
   bg3,
   bg4,

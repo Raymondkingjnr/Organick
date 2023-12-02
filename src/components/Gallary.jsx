@@ -21,7 +21,7 @@ const gallary_img = [
 const Gallary = () => {
   return (
     <section className="bg-[#F1F8F4]">
-      <div className=" align-element grid lg:grid-cols-3 md:grid-cols-3 gap-x-8 gap-y-7 items-center place-content-center py-12 my-10">
+      <div className=" align-element grid lg:grid-cols-3 md:grid-cols-2 gap-x-8 gap-y-7 items-center place-items-center place-content-center py-12 my-10">
         {gallary_img.map((image) => {
           const { id, png, text } = image;
 

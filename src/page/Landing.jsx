@@ -5,6 +5,7 @@ import {
   Extra,
   Gallary,
   Hero,
+  HomeNews,
   Offers,
   Testimonials,
 } from "../components";
@@ -19,7 +20,7 @@ const Landing = () => {
       <Offers />
       <Eco />
       <Gallary />
-      <Landing />
+      <HomeNews />
     </div>
   );
 };
