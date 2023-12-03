@@ -31,21 +31,23 @@ import offer1 from "../assets/offer1.png";
 import offer2 from "../assets/offer2.png";
 import offer3 from "../assets/offer3.png";
 import offer4 from "../assets/offer4.png";
-import tomatoes from "../assets/tomatoes.png";
-import leafs from "../assets/leafs.png";
+import news2 from "../assets/news2.png";
+import news1 from "../assets/news1.png";
 import spicy from "../assets/spicy.png";
 import nuts from "../assets/nuts.jpg";
 import ginger from "../assets/ginger.jpg";
 import apple from "../assets/apple.png";
+import contact_bg from "../assets/contact-bg.png";
 
 export default {
   spicy,
+  contact_bg,
   nuts,
   ginger,
   apple,
   bg1,
-  leafs,
-  tomatoes,
+  news1,
+  news2,
   bg2,
   bg3,
   bg4,

@@ -1,26 +1,7 @@
 import React from "react";
-import image from "../constant/image";
+import { data } from "../constant";
 import { RxAvatar } from "react-icons/rx";
 import { Link } from "react-router-dom";
-
-const news_gallary = [
-  {
-    id: 1,
-    image: image.leafs,
-    text: "Simply dummy text of the printing and typesetting industry. Lorem Ipsum",
-    title: "The Benefits of Vitamin D & How to Get It",
-    name: "Adams taylor",
-    date: "25 Nov",
-  },
-  {
-    id: 1,
-    image: image.tomatoes,
-    text: "Simply dummy text of the printing and typesetting industry. Lorem Ipsum",
-    title: "Our Favourite Summertime Tommeto",
-    name: "Frank Donga",
-    date: "25 Nov",
-  },
-];
 
 const HomeNews = () => {
   return (
@@ -40,11 +21,11 @@ const HomeNews = () => {
             Read More
           </Link>
         </div>
-        <main className="grid lg:grid-cols-2 md:grid-cols-2 items-center relative gap-14 pt-10">
-          {news_gallary.map((item) => {
+        <main className="grid lg:grid-cols-2 md:grid-cols-2 items-center place-content-center place-items-center gap-14 pt-10">
+          {data.news_gallary.map((item) => {
             const { id, image, text, title, name, date } = item;
             return (
-              <div key={id}>
+              <div key={id} className="relative">
                 <div className="absolute bg-white rounded text-center mt-2 ml-6">
                   <p className="text-[#000] font-bold p-3">{date}</p>
                 </div>

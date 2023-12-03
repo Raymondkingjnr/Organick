@@ -21,7 +21,7 @@ const icons = [
 
 const Footer = () => {
   return (
-    <section className="align-element my-20">
+    <section className="align-element mt-12">
       <div
         className="bg-cover align-element h-56 border rounded-2xl  grid bg-center mt-52 mb-10 items-center"
         style={{ backgroundImage: `url(${image.footer_bg})` }}
@@ -36,7 +36,7 @@ const Footer = () => {
             <input
               type="text"
               placeholder="Email"
-              className="input input-bordered input-warning w-280px md:w-[350px]"
+              className="input input-bordered w-280px md:w-[350px]"
             />
             <button className="btn bg-[#274C5B] border-transparent text-[#fff]">
               Subscribe
@@ -46,7 +46,7 @@ const Footer = () => {
       </div>
 
       {/* 2nd Footer */}
-      <div className="hidden gap-x-5 lg:grid gap-y-5 lg:grid-cols-3 md:grid-cols-2 place-items-center items-center ">
+      <div className="hidden lg:flex justify-between px-5 ">
         <div className="grid lg:text-right text-center p-2">
           <h4 className="capitalize font-semibold text-lg pb-4"> contact us</h4>
           <h4 className="text-sm font-semibold">Email</h4>
@@ -66,7 +66,7 @@ const Footer = () => {
             <img src={image.logo} alt="" className="w-8 h-8 object-contain" />
             <h4 className="text-xl font-semibold">Organick</h4>
           </main>
-          <p className="mt-4 mb-4 font-semibold text-sm text-[gray] leading-6 tracking-wide">
+          <p className="mt-4 mb-4 font-semibold text-sm text-[gray] leading-6 tracking-wide w-80">
             Simply dummy text of the printing and typesetting industry. Lorem
             Ipsum simply dummy text of the printing{" "}
           </p>
@@ -109,7 +109,7 @@ const Footer = () => {
           <img src={image.logo} alt="" className="w-8 h-8 object-contain" />
           <p>Copyright © 2023 - All right reserved</p>
         </aside>
-        <nav className="grid-flow-col gap-4 md:place-self-center md:justify-self-end ">
+        <main className="grid-flow-col gap-4 md:place-self-center md:justify-self-end ">
           {icons.map((icon, index) => {
             return (
               <ul
@@ -120,7 +120,7 @@ const Footer = () => {
               </ul>
             );
           })}
-        </nav>
+        </main>
       </footer>
     </section>
   );

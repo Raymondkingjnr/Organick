@@ -14,3 +14,4 @@ export { default as ChooseUs } from "./ChooseUs";
 export { default as Teams } from "./Teams";
 export { default as Specials } from "./Specials";
 export { default as Video } from "./Video";
+export { default as ContactLayout } from "./ContactLayout";
