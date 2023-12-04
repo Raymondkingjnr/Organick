@@ -3,11 +3,13 @@ import image from "../constant/image";
 import { NavLink } from "react-router-dom";
 import Navlinks from "./Navlinks";
 import { FaBarsStaggered } from "react-icons/fa6";
+import { IoIosSearch } from "react-icons/io";
+import { GrCart } from "react-icons/gr";
 
 const Navbar = () => {
   return (
     <nav className="bg-base-200">
-      <div className="navbar align-element">
+      <div className="navbar md:align-element">
         <div className="navbar-start">
           <NavLink className="justify-center items-center hidden lg:flex">
             <img src={image.logo} alt="" className="w-10 h-10 object-contain" />
@@ -35,13 +37,27 @@ const Navbar = () => {
             <Navlinks />
           </ul>
         </div>
-        <div className="navbar-end">
-          <img
-            loading="lazy"
-            src="https://cdn.builder.io/api/v1/image/assets/TEMP/65ade1a8-7c89-4acc-b683-2151a597fb3a?apiKey=e6d0dd2523eb4c09bec414f19a613dec&"
-            className="aspect-square w-10 h-10 object-contain cursor-pointer overflow-hidden"
-          />
-        </div>
+        <section className="navbar-end flex gap-2">
+          <div>
+            <div className="grid place-items-center">
+              <div className=" h-[35px] w-[35px] border grid place-content-center text-center rounded-full items-center hover:shadow-md transition duration-300 cursor-pointer bg-[#7EB693]">
+                <p className="text-[#fff] text-center text-xl">
+                  <IoIosSearch />
+                </p>
+              </div>
+            </div>
+          </div>
+          <main className="flex border justify-between rounded-full p-1 gap-4 place-items-center">
+            <div className="grid place-items-center">
+              <div className=" h-[35px] w-[35px] border grid place-content-center text-center rounded-full items-center hover:shadow-md transition duration-300 cursor-pointer bg-[#274C5B]">
+                <p className="text-[#fff] text-center text-xl">
+                  <GrCart />
+                </p>
+              </div>
+            </div>
+            <h4 className="text-sm font-bold text-[#274C5B]">Cart (0)</h4>
+          </main>
+        </section>
       </div>
     </nav>
   );

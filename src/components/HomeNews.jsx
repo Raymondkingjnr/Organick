@@ -22,7 +22,7 @@ const HomeNews = () => {
           </Link>
         </div>
         <main className="grid lg:grid-cols-2 md:grid-cols-2 items-center place-content-center place-items-center gap-14 pt-10">
-          {data.news_gallary.map((item) => {
+          {data.news_gallary.slice(0, 2).map((item) => {
             const { id, image, text, title, name, date } = item;
             return (
               <div key={id} className="relative">
@@ -32,7 +32,7 @@ const HomeNews = () => {
                 <div className="lg:w-[550px] sm:w-[400px] md:w-[350px]">
                   <img src={image} alt="" />
                 </div>
-                <div className="lg:w-[500px] sm:w-[350px] md:w-[300px] md:ml-6 md:top-[50%] rounded-xl shadow-2xl bg-white lg:top-[80%] md:absolute z-[9999] p-4">
+                <div className="w-[350px] lg:w-[500px]  md:w-[300px] md:h-[200px] md:ml-6 md:top-[50%] rounded-xl shadow-2xl bg-white lg:top-[80%] md:absolute z-[9999] p-4">
                   <article className="flex align-middle items-center gap-2">
                     <RxAvatar className="text-[#EFD372]" />
                     <p className="pb-[2px] font-semibold text-xs">{name}</p>

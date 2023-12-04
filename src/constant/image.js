@@ -38,8 +38,20 @@ import nuts from "../assets/nuts.jpg";
 import ginger from "../assets/ginger.jpg";
 import apple from "../assets/apple.png";
 import contact_bg from "../assets/contact-bg.png";
+import news3 from "../assets/news3.png";
+import news4 from "../assets/news4.png";
+import news5 from "../assets/news5.png";
+import news6 from "../assets/news6.png";
+import news_bg from "../assets/news-bg.png";
+import stars from "../assets/Star.png";
 
 export default {
+  news_bg,
+  stars,
+  news3,
+  news4,
+  news5,
+  news6,
   spicy,
   contact_bg,
   nuts,

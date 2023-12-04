@@ -5,7 +5,7 @@ import SectionTitle from "./SectionTitle";
 const Hero = () => {
   return (
     <div
-      className="h-[700px] bg-cover object-contain  bg-no-repeat bg-center "
+      className="h-[690px] lg:h-[700px] md:h-[1020px] bg-cover object-contain  bg-no-repeat bg-center "
       style={{ backgroundImage: `url(${image.hero_bg})` }}
     >
       <section className="grid items-center align-element ">

@@ -1,6 +1,6 @@
 import React from "react";
 import image from "../constant/image";
-import SectionTitle from "./SectionTitle";
+import { images } from "../constant";
 
 const cards = [
   {
@@ -65,7 +65,7 @@ const Offers = () => {
                     vegetables
                   </p>
                 </div>
-                <figure className="px-10 pt-10">
+                <figure className="px-10">
                   <img
                     src={image}
                     alt={title}
@@ -75,13 +75,16 @@ const Offers = () => {
                 <div className="card-body items-start text-left ">
                   <p className="card-title text-sm font-semibold">{title}</p>
                   <div class="divider"></div>
-                  <div className="flex align-middle gap-x-3">
-                    <s className="font-semibold text-xs text-[#B8B8B8]">
-                      {forma_price}
-                    </s>
-                    <p className="font-semibold text-xs text-[#274C5B]">
-                      {current_price}
-                    </p>
+                  <div className="flex justify-between place-items-center w-full">
+                    <div className="flex gap-x-3">
+                      <s className="font-semibold text-xs text-[#B8B8B8]">
+                        {forma_price}
+                      </s>
+                      <p className="font-semibold text-xs text-[#274C5B]">
+                        {current_price}
+                      </p>
+                    </div>
+                    <img src={images.stars} alt="" />
                   </div>
                 </div>
               </div>

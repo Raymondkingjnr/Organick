@@ -8,7 +8,7 @@ const AboutSec = () => {
       <div>
         <img src={image.about1} alt="" />
       </div>
-      <div>
+      <div className="rounded-lg shadow-md hover:shadow-xl transition duration-300">
         <div className="card-body lg:w-[500px] lg:mt-10 md:w-[450px] md:mt-32  sm:w-0 float-right">
           <div>
             <SectionTitle
