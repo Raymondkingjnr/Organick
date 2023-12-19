@@ -5,8 +5,12 @@ import Navlinks from "./Navlinks";
 import { FaBarsStaggered } from "react-icons/fa6";
 import { IoIosSearch } from "react-icons/io";
 import { GrCart } from "react-icons/gr";
+import { useDispatch } from "react-redux";
+import { logOut } from "../features/User/userSlice";
 
 const Navbar = () => {
+  const dispatch = useDispatch();
+
   return (
     <nav className="bg-base-200">
       <div className="navbar md:align-element">
@@ -19,7 +23,7 @@ const Navbar = () => {
           <div className="dropdown">
             <label
               tabIndex={0}
-              role="btton"
+              role="botton"
               className="btn btn-success lg:hidden"
             >
               <FaBarsStaggered className="h-6 w-6" />
@@ -59,8 +63,13 @@ const Navbar = () => {
           </main>
         </section>
       </div>
+      <button className="btn" onClick={() => dispatch(logOut())}>
+        logout
+      </button>
     </nav>
   );
 };
 
 export default Navbar;
+
+9044644200;
