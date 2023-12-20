@@ -44,7 +44,7 @@ const HomeNews = () => {
                     {text}
                   </p>
                   <div className="mt-3">
-                    <button className="btn bg-[#EFD372] text-[#274C5B]">
+                    <button className="btn border-transparent bg-[#EFD372] text-[#274C5B]">
                       Read More
                     </button>
                   </div>

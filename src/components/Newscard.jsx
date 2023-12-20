@@ -26,7 +26,7 @@ const Newscard = () => {
                 </h3>
                 <p className="text-sm font-light text-[#525C60] pt-3">{text}</p>
                 <div className="mt-3 grid items-end w-[150px]">
-                  <button className="btn bg-[#EFD372] text-[#274C5B]">
+                  <button className="btn bg-[#EFD372] border-transparent text-[#274C5B]">
                     Read More
                   </button>
                 </div>

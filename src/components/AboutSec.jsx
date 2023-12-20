@@ -34,7 +34,7 @@ const AboutSec = () => {
                 <div className="text-slate-700 text-sm font-extrabold max-md:max-w-full">
                   Organic Foods Only
                 </div>
-                <div className="text-[#000] text-xs  font-semibold  mt-2">
+                <div className=" text-xs  font-semibold  mt-2">
                   Simply dummy text of the printing and typesetting industry.
                   Lorem Ipsum
                 </div>
@@ -54,7 +54,7 @@ const AboutSec = () => {
                 <div className="text-slate-700 text-sm font-extrabold max-md:max-w-full">
                   Organic Foods Only
                 </div>
-                <div className="text-[#000] text-xs  font-semibold mt-2 max-md:max-w-full">
+                <div className=" text-xs  font-semibold mt-2 max-md:max-w-full">
                   Simply dummy text of the printing and typesetting industry.
                   Lorem Ipsum
                 </div>
