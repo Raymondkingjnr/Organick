@@ -17,8 +17,6 @@ import about1 from "../assets/about1.png";
 import about2 from "../assets/about2.png";
 import choose_img from "../assets/choose-us.png";
 import eco_img from "../assets/eco-img.png";
-// import image_bg1 from "../assets/image1.png";
-import image_bg2 from "../assets/image2.png";
 import juice from "../assets/juice.png";
 import logo from "../assets/Logo.png";
 import service_img from "../assets/service.png";
@@ -78,8 +76,6 @@ export default {
   about2,
   choose_img,
   eco_img,
-  image_bg1,
-  image_bg2,
   juice,
   logo,
   service_img,
