@@ -42,13 +42,13 @@ const Testimonials = () => {
         {/* Carousel sec */}
 
         <div className=" w-[700px] carousel flex items-center place-items-center rounded-box mt-10">
-          {carouselItems.map((item) => {
+          {carouselItems.map((item, index) => {
             const { id, image, text, name } = item;
 
             return (
               <div
                 className="carousel-item w-full flex-col items-center h-full text-center "
-                key={id}
+                key={`${id} ${index}`}
               >
                 <div className="pt-2">
                   <img src={image} alt="" className="rounded-full w-14 h-14" />

@@ -22,13 +22,13 @@ const Gallary = () => {
   return (
     <section className="bg-[#F1F8F4]">
       <div className=" align-element grid lg:grid-cols-3 md:grid-cols-2 gap-x-8 gap-y-7 items-center place-items-center place-content-center py-12 my-10">
-        {gallary_img.map((image) => {
+        {gallary_img.map((image, index) => {
           const { id, png, text } = image;
 
           return (
             <div
               className="card w-72 bg-base-100 shadow-xl image-full"
-              key={id}
+              key={index}
             >
               <figure>
                 <img src={png} alt="Shoes" srcSet="" />

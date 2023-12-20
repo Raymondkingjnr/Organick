@@ -53,12 +53,12 @@ const Offers = () => {
         </main>
 
         <div className="grid gap-x-[3rem] gap-y-5 lg:grid-cols-4 md:grid-cols-2 place-items-center pt-8">
-          {cards.map((item) => {
+          {cards.map((item, index) => {
             const { id, title, image, forma_price, current_price } = item;
             return (
               <div
                 className="card w-[280px] bg-base-100 shadow-xl hover:shadow-2xl transition duration-300"
-                key={id}
+                key={`${id} ${index}`}
               >
                 <div className="text-center card-body">
                   <p className=" w-20 text-[#ffff] mt-2 ml-2 font-semibold text-xs p-1 rounded bg-[#274C5B]">
@@ -74,7 +74,7 @@ const Offers = () => {
                 </figure>
                 <div className="card-body items-start text-left ">
                   <p className="card-title text-sm font-semibold">{title}</p>
-                  <div class="divider"></div>
+                  <div className="divider"></div>
                   <div className="flex justify-between place-items-center w-full">
                     <div className="flex gap-x-3">
                       <s className="font-semibold text-xs text-[#B8B8B8]">
