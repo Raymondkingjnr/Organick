@@ -22,9 +22,6 @@ import logo from "../assets/Logo.png";
 import service_img from "../assets/service.png";
 import testimonial from "../assets/testimonial-bg.jpg";
 import video_img from "../assets/video-bg.png";
-import photo1 from "../assets/photo1.jpg";
-import photo2 from "../assets/photo2.jpg";
-import photo3 from "../assets/photo3.jpg";
 import offer1 from "../assets/offer1.png";
 import offer2 from "../assets/offer2.png";
 import offer3 from "../assets/offer3.png";
@@ -81,9 +78,6 @@ export default {
   service_img,
   testimonial,
   video_img,
-  photo1,
-  photo2,
-  photo3,
   offer1,
   offer2,
   offer3,

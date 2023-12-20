@@ -1,23 +1,26 @@
 import React from "react";
 import image from "../constant/image";
 import SectionTitle from "./SectionTitle";
+import photo1 from "../assets/photo1.jpg";
+import photo2 from "../assets/photo2.jpg";
+import photo3 from "../assets/photo3.jpg";
 
 const carouselItems = [
   {
     id: 1,
-    image: image.photo1,
+    image: photo1,
     text: "Simply dummy text of the printing and typesetting industry. Lorem Ipsum simply dummy text of the printing and typesetting industry. Lorem Ipsum has been.",
     name: "Sarah Taylor",
   },
   {
     id: 1,
-    image: image.photo2,
+    image: photo2,
     text: "Simply dummy text of the printing and typesetting industry. Lorem Ipsum simply dummy text of the printing and typesetting industry. Lorem Ipsum has been.",
     name: "Adam Jones",
   },
   {
     id: 1,
-    image: image.photo3,
+    image: photo3,
     text: "Simply dummy text of the printing and typesetting industry. Lorem Ipsum simply dummy text of the printing and typesetting industry. Lorem Ipsum has been.",
     name: "Raymond philips",
   },
