@@ -2,8 +2,8 @@ import { createSlice } from "@reduxjs/toolkit";
 import { auth } from "../../firestore_config";
 import {
   createUserWithEmailAndPassword,
+  getAuth,
   signInWithEmailAndPassword,
-  updateCurrentUser,
   updateProfile,
 } from "firebase/auth";
 import {
@@ -36,7 +36,9 @@ const authSlice = createSlice({
 // LOGINUSER
 
 export const signIn = (email, password) => async (dispatch) => {
-  signInWithEmailAndPassword(auth, password, email)
+  const trimmedEmail = email.trim();
+
+  signInWithEmailAndPassword(auth, trimmedEmail, password)
     .then((userCredential) => {
       const user = userCredential.user;
       dispatch(logUser(user));
@@ -54,14 +56,14 @@ export const signIn = (email, password) => async (dispatch) => {
 // SIGNUP USER
 
 export const signUp = (email, password, name) => async (dispatch) => {
-  createUserWithEmailAndPassword(auth, email, password, name)
+  createUserWithEmailAndPassword(auth, email, password)
     .then((userCredential) => {
       const user = userCredential.user;
       addUserLocalStorage(user);
       return updateProfile(user, { displayName: name });
     })
     .then(() => {
-      const user = updateCurrentUser;
+      const user = getAuth().currentUser;
       dispatch(logUser(user));
       dispatch(setLoading(true));
     })

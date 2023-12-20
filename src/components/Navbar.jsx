@@ -5,12 +5,12 @@ import Navlinks from "./Navlinks";
 import { FaBarsStaggered } from "react-icons/fa6";
 import { IoIosSearch } from "react-icons/io";
 import { GrCart } from "react-icons/gr";
-import { useDispatch } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 import { logOut } from "../features/User/userSlice";
 
 const Navbar = () => {
   const dispatch = useDispatch();
-
+  const { user } = useSelector((state) => state.auth);
   return (
     <nav className="bg-base-200">
       <div className="navbar md:align-element">
@@ -63,9 +63,20 @@ const Navbar = () => {
           </main>
         </section>
       </div>
-      <button className="btn" onClick={() => dispatch(logOut())}>
-        logout
-      </button>
+      {/* <div className=" align-element">
+        <button className="btn" onClick={() => dispatch(logOut())}>
+          logout
+        </button>
+        {user ? (
+          <div className=" bg-green-lightbg p-3 rounded-xl w-fit float-right my-2">
+            <h3 className=" font-bold text-sm ">
+              Welcome {user.displayName} ✅
+            </h3>
+          </div>
+        ) : (
+          ""
+        )}
+      </div> */}
     </nav>
   );
 };
