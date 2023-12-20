@@ -31,7 +31,7 @@ const Gallary = () => {
               key={id}
             >
               <figure>
-                <img src={png} alt="Shoes" />
+                <img src={png} alt="Shoes" srcSet="" />
               </figure>
               <div className="card-body grid items-center">
                 <div className="card-actions justify-center">

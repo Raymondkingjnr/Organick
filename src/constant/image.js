@@ -24,7 +24,7 @@ import logo from "../assets/Logo.png";
 import service_img from "../assets/service.png";
 import testimonial from "../assets/testimonial-bg.jpg";
 import video_img from "../assets/video-bg.png";
-import photo1 from "../assets/photo1.jpg";
+import photo1 from "../assets/photo1";
 import photo2 from "../assets/photo2.jpg";
 import photo3 from "../assets/photo3.jpg";
 import offer1 from "../assets/offer1.png";
